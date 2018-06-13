@@ -1,0 +1,188 @@
+\documentclass{beamer}
+
+\mode<presentation>
+{
+  \usetheme{Madrid}      
+  \usecolortheme{seahorse}
+  \usefonttheme{serif} 
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,portuguese, main=russian]{babel}	% локализация и переносы
+
+%Диаграмы и рисунки
+\usepackage{smartdiagram}
+\usepackage{graphicx}
+\graphicspath{{pictures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{pifont}
+
+\usepackage[english]{babel}
+%\usepackage[utf8x]{inputenc}
+%\usepackage{xcolor}
+\usepackage{listings}
+\lstset
+{
+    language=[LaTeX]TeX,
+    breaklines=true,
+    basicstyle=\tt\scriptsize,
+    %commentstyle=\color{green}
+    keywordstyle=\color{blue},
+    %stringstyle=\color{black}
+    identifierstyle=\color{magenta},
+}
+
+\title[Digital Humanities]{Русофобия в DotA2. Критический дискурсивный анализ онлайн-дискриминации}
+\author{Анастасия Кузнецова}
+\institute{НИУ ВШЭ}
+\date{13 июня 2018}
+
+
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}{Что такое DotA2?}
+		\begin{figure}
+			\includegraphics[height=6.8cm]{dota.jpeg}
+		\end{figure}
+\end{frame}
+\begin{frame}{Что такое DotA2?}
+	\textbf{<<Defence of Ancients>>} \\ (MOBA or multiplayer online battle arena)
+	\begin{itemize}
+		\item Битва между двумя командами по 5 игроков. 
+		\item Цель игры -- разрушить базу противника. 
+		\item Каждый игрок может выбирать себе уникального героя с уникальными способностями.
+	\end{itemize}
+	\textbf{Статья:} \\
+	\textit{Albin Wagener.} Russophobia in DotA 2. A critical discursive analysis of online discrimination, 2018. 
+\end{frame}
+
+\begin{frame}{Исследование}
+\textbf{Дискурсивный анализ. Определение дискурса} \\
+Очень глубокое погружение в анализ понятия. Автор статьи понимает под дискурсом:
+\begin{itemize}
+	\item Лингвистические (и не только) элементы семиотики, сосредоточенные на отношениях с элементами социального и материального. 
+	\item Форму социальной практики. Он обусловлен взаимоотношениями между конкретным дискурсивным событием и ситуацией, социальными институтами, общественной структурой. 
+	\item Область прагматики, изучающей условия использования семантических знаков.
+	
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Корпус}
+	\textbf{Типы дискурса}
+	\begin{itemize}
+		\item Общение в чате в процессе игры
+		\item Общение на форумах вне игрового процесса. 
+	\end{itemize}
+	Воспроизведение стереотипов о России и русских в дискурсе. \\
+	\textbf{Данные корпуса}
+		\begin{itemize}
+			\item Форумы и топики в форумах по ключевым словам <<Russians>>, <<DotA2>> (официальные форумы, администрируемые создателями игры, неофициальные форумы, созданные комьюнити).
+			\item 1058 высказываний из 7 источников по 9 темам. 
+		\end{itemize}
+\end{frame}
+
+\begin{frame}{Корпус}
+	\begin{figure}
+		\includegraphics[scale=0.3]{img7.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Isolate Russian DOTA 2 players on their own servers}
+	\begin{figure}
+		\includegraphics[scale=0.5]{img8.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Методы исследования}
+	\textbf{Методы} 
+	\begin{itemize}
+		\item Анализ коллокаций
+		\item Составление семантико-тематических облаков.
+		\item Проксимизация (выделение отношений между сущностями в пространстве дискурса). 
+		\item Пространственно-временная аксиологическая интерпретация.
+	\end{itemize}
+	\textbf{Инструменты}\\
+	WordSmith (Oxford)\\
+	Tropes
+\end{frame}
+
+\begin{frame}{Анализ данных}
+	\textbf{Идея дейктических центров (P. Cap, 2013, 2014)}
+	\begin{itemize}
+		\item \textit{Outside Deictic Center} (ODC)
+		\item  \textit{Inside Deictic Center} (IDC) 
+	\end{itemize}
+	Попытка выделить две полярных группы противопоставленных друг другу в дискурсе: русскоязычные пользователи vs. остальные игроки. \\
+	Анализ частотности слов позволяет выделить две две группы действующих лиц по употребляемым ими словам: \\
+	\begin{enumerate}
+		\item 'I', 'me', 'we' (598 высказываний)
+		\item 'They', 'Them', 'Their' (493 высказывания)
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Анализ данных}
+	\begin{figure}
+		\caption{Распределение высказываний по семантическим областям}
+		\includegraphics[height=6.8cm]{img1.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Анализ данных}
+	\begin{figure}
+		\caption{Таблица частотности по семантическим областям}
+		\includegraphics[height=6.8cm]{img2.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Анализ данных}
+	\begin{figure}
+		\caption{Частотные коллокации для слова <<сервер>> (server)}
+		\includegraphics[height=6.8cm]{img3.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Анализ данных}
+	\begin{figure}
+		\caption{Частотные коллокации для слова <<плохой>> (bad)}
+		\includegraphics[scale=0.4]{img4.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Анализ данных}
+	\begin{figure}
+		\caption{Inside Deictic Center}
+		\includegraphics[scale=0.4]{img5.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Анализ данных}
+	\begin{figure}
+		\caption{Outside Deictic Center}
+		\includegraphics[scale=0.4]{img6.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Результаты}
+\begin{itemize}
+	\item Русские игроки не демонстрируют должно знания английского языка, чем доставляют дискомфорт остальным;
+	\item Необходимо выделить отдельный сервер для русскоговорящей аудитории (решение проблемы) ;
+	\item Русскоговорящие игроки воспринимаются исключительно как жители России. Аудитория не имеет представления о разнообразии русскоязычного населения на территории Восточной Европы \ding{221} Воспроизводятся стандартные стереотипы о России.
+	\item  При том, если в игре используются другие языки кроме русского, это не создает больших проблем. 
+	\item Наличие в команде русскоязычного игрока автоматически ведет к поражению. 
+	
+\end{itemize}
+\end{frame}
+
+\end{document}
